@@ -64,10 +64,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: maven
-
-      - name: Make Maven wrapper executable
-        run: chmod +x mvnw
-
       - name: Generate test report
         run: ./mvnw verify -DskipTests=false
 
